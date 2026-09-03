@@ -28,9 +28,9 @@ export function Hero() {
           <div className="mx-auto w-full max-w-sm lg:max-w-none">
             <div className="relative">
               <div className="absolute -inset-3 -z-10 rotate-2 rounded-[1.75rem] border border-border bg-blue-gray/70" aria-hidden="true" />
-              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-border-strong bg-blue-mist shadow-soft">
-                <div className="absolute inset-x-8 bottom-0 top-5">
-                  <Image src="/images/profile/profile-hero.webp" alt="Portrait of RJ B. Tolibas" fill priority sizes="(max-width: 1023px) 384px, 34vw" className="object-contain object-bottom drop-shadow-[0_18px_24px_rgb(31_41_55_/_0.16)]" />
+              <div className="relative aspect-4/5 overflow-hidden rounded-2xl border border-border-strong bg-blue-mist shadow-soft">
+                <div className="absolute inset-0">
+                  <Image src="/images/profile/profile-hero.webp" alt="Portrait of RJ B. Tolibas" fill priority sizes="(max-width: 1023px) 384px, 34vw" className="translate-y-8 object-contain object-bottom drop-shadow-[0_18px_24px_rgb(31_41_55/0.16)]" />
                 </div>
                 <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between gap-4 rounded-xl border border-border bg-surface/95 p-4 shadow-sm backdrop-blur-md">
                   <div><p className="text-sm font-semibold text-foreground">RJ B. Tolibas</p><p className="mt-0.5 text-xs text-muted-foreground">Web Designer &amp; Developer</p></div>
