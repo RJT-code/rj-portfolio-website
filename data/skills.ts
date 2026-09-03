@@ -1,7 +1,7 @@
 export type SkillGroup = { title: string; description: string; skills: readonly string[] };
 
 export const skillGroups: readonly SkillGroup[] = [
-  { title: "Frontend", description: "Technologies used to build fast, maintainable interfaces.", skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML", "CSS"] },
-  { title: "Design & UX", description: "Practices that keep digital products clear and inclusive.", skills: ["Responsive Design", "Accessibility", "Design Systems", "UI / UX Design", "Interaction Design"] },
-  { title: "Tools & Workflow", description: "A focused workflow for reliable delivery and iteration.", skills: ["Git", "npm", "ESLint", "Vercel", "Performance Auditing"] },
+  { title: "Frontend", description: "Technologies I use to build responsive, maintainable, and production-ready interfaces.", skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML", "CSS"] },
+  { title: "Design & UX", description: "Design practices I use to create clear, accessible, and intuitive digital experiences.", skills: ["Responsive Design", "Accessibility", "Design Systems", "Interaction Design", "Wireframing", "Prototyping"] },
+  { title: "Tools & Workflow", description: "Tools I use to develop, version, validate, and deploy projects efficiently.", skills: ["Figma", "Git", "GitHub", "Vercel", "VS Code"] },
 ];
