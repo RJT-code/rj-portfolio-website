@@ -1,5 +1,6 @@
 ﻿import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { Reveal } from "@/components/ui/reveal";
 
 const highlights = [
   ["500", "hours in UI/UX", "Completed an immersive design internship creating client websites, prototypes, brand guidelines, and reusable design systems."],
@@ -24,11 +25,11 @@ export function About() {
         </div>
       </div>
       <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-3 lg:mt-18">
-        {highlights.map(([value, title, text]) => <article key={title} className="bg-surface p-6 sm:p-8">
+        {highlights.map(([value, title, text], index) => <Reveal key={title} className="bg-surface" delay={index * 70}><article className="h-full p-6 sm:p-8">
           <p className="font-mono text-2xl font-semibold tracking-tight text-primary">{value}</p>
           <h3 className="mt-4 text-xl font-semibold tracking-tight">{title}</h3>
           <p className="mt-3 text-sm leading-7 text-muted-foreground">{text}</p>
-        </article>)}
+        </article></Reveal>)}
       </div>
     </Container>
   </section>;

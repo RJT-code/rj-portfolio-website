@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { experience } from "@/data/experience";
+import { Reveal } from "@/components/ui/reveal";
 
 export function Experience() {
   return (
@@ -15,8 +16,8 @@ export function Experience() {
           />
 
           <ol className="relative space-y-5 before:absolute before:bottom-8 before:left-1.75 before:top-8 before:w-px before:bg-border-strong" aria-label="Professional experience timeline">
-            {experience.map((entry) => (
-              <li key={`${entry.role}-${entry.organization}`} className="relative pl-8">
+            {experience.map((entry, index) => (
+              <Reveal as="li" key={`${entry.role}-${entry.organization}`} className="relative pl-8" delay={index * 70}>
                 <span className="absolute left-0 top-8 size-3.5 rounded-full border-4 border-background bg-primary ring-1 ring-border-strong" aria-hidden="true" />
                 <article className="rounded-2xl border border-border bg-surface p-5 shadow-soft sm:p-7">
                   <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-primary">{entry.period}</p>
@@ -33,7 +34,7 @@ export function Experience() {
                     ))}
                   </ul>
                 </article>
-              </li>
+              </Reveal>
             ))}
           </ol>
         </div>
