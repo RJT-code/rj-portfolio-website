@@ -17,15 +17,15 @@ const title = "RJ B. Tolibas | Web Designer & Developer";
 const description =
   "Portfolio of RJ B. Tolibas, a web designer and developer creating accessible, responsive digital experiences.";
 
-const deploymentUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
-const metadataBase = new URL(
-  deploymentUrl ? `https://${deploymentUrl}` : "http://localhost:3000",
-);
+const metadataBase = new URL("https://rjtolibas.com");
 
 export const metadata: Metadata = {
   metadataBase,
   title,
   description,
+  alternates: {
+    canonical: "/",
+  },
   applicationName: "RJ B. Tolibas Portfolio",
   authors: [{ name: "RJ B. Tolibas" }],
   creator: "RJ B. Tolibas",
@@ -50,6 +50,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
+    url: "/",
     locale: "en_US",
     title,
     description,
