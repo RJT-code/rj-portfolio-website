@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { SectionLink } from "@/components/ui/section-link";
 
@@ -15,8 +15,8 @@ const navigation = [
 function Brand() {
   return (
     <SectionLink className="group inline-flex min-h-11 items-center gap-3 rounded-lg" href="#home" aria-label="RJ, home">
-      <span className="grid size-9 place-items-center rounded-lg border border-border-strong bg-background shadow-sm transition-colors group-hover:border-foreground/40">
-        <Image src="/brand/rj-logo.svg" alt="" width={24} height={24} aria-hidden="true" />
+      <span className="grid size-12 place-items-center">
+        <Image src="/brand/logo-black.webp" alt="" width={48} height={48} aria-hidden="true" />
       </span>
 
     </SectionLink>
