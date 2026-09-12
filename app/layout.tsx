@@ -70,10 +70,6 @@ export const metadata: Metadata = {
     description,
     images: ["/images/projects/velora-coffee.webp"],
   },
-  icons: {
-    icon: [{ url: "/brand/rj-icon.svg", type: "image/svg+xml" }],
-    shortcut: "/brand/rj-icon.svg",
-  },
 };
 
 export default function RootLayout({
